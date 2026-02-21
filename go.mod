@@ -1,4 +1,4 @@
-module backend-dsl
+module backend-cli
 
 go 1.25.3
 
