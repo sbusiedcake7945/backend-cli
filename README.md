@@ -1,35 +1,41 @@
-# 🚀 XML-Based Backend Programming Language
+# backend-cli
 
-Modern, fast, and XML-syntax interpreted backend programming language developed with Go. Transforms `.backend` files into API servers in seconds without intermediate compilation.
-
----
-
-## 🌟 Key Features
-
-- **🔒 Pure Interpreter**: Go independent. Runs everywhere with `backend-cli` without needing Go installed.
-- **📦 Dynamic Variables**: Variable definition with `<var>` and dynamic usage with `{{var}}`.
-- **🌐 HTTP Requests**: Ability to make direct API requests from within the DSL.
-- **🎨 HTML Rendering**: Render nested HTML structures with attributes directly to the browser.
-- **💻 Cross-Platform**: Support for both Linux and Windows (.exe).
-
----
-
-## 🛠️ Usage
-
-### Command Line (CLI)
-To run your file:
-
+## compiling
+### first step:
+clone the repo
 ```bash
-# Linux
-./backend-cli run your_app.backend
-
-# Windows
-backend-cli.exe run your_app.backend
+git clone sbusiedcake7945/backend-cli.git
 ```
 
+### second step:
+get in the folder
+```bash
+cd <your directory>/backend-cli
+```
+
+### third step:
+compile it
+for windows
+```bash
+go build -o backend-cli.exe .
+```
+for linux:
+```bash
+GOOS=linux GOARCH=amd64 go build -o backend-cli .
+```
 ---
 
-## 📖 Documentation
-For detailed documentation, syntax guides, and advanced examples, please visit the **[Documentation Site](docs/index.html)**.
+## usage
+### windows:
+```bash
+./backend-cli.exe run <file name>.backend
+```
 
-*Happy coding!* antisocially.
+### linux:
+```bash
+./backend-cli run <file name>.backend
+```
+
+___
+
+[docs](https://backend-cli.5live.xyz)
